@@ -21,7 +21,7 @@ import org.apache.commons.text.StringSubstitutor;
 
 public class ConvertWsdlToJson {
 	
-	public static final String PATH = "/Users/I327667/eclipse-workspace-cx-suite-integration/convertion/src/main/resources/";
+	public static final String PATH = "/Users/I327667/git/wsdl-to-json/wsdl-to-json/src/main/resources/";
 	public static final String TEMPLATE_COMPLEXTYPE_OBJECT = "attributeComplexTypeObject";
 	public static final String TEMPLATE_COMPLEXTYPE_ARRAY = "attributeComplexTypeArray";
 	public static final String TEMPLATE_SIMPLETYPE = "attributeSimpleType";
