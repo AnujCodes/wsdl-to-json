@@ -1,0 +1,12 @@
+"${title}" : {
+	"title": "${title}",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            ${attribute}
+        }
+	}
+}

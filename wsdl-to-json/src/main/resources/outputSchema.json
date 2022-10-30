@@ -1,0 +1,318 @@
+{
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "string"
+            },
+            "MessageHeader" : {
+	"title": "MessageHeader",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"ID" : {
+	"title": "ID",
+    "type": "string"
+},"UUID" : {
+	"title": "UUID",
+    "type": "string"
+},"ReferenceID" : {
+	"title": "ReferenceID",
+    "type": "string"
+},"ReferenceUUID" : {
+	"title": "ReferenceUUID",
+    "type": "string"
+},"CreationDateTime" : {
+	"title": "CreationDateTime",
+	"type": "string",
+	"format": "date-time"
+}
+,"ReconciliationIndicator" : {
+	"title": "ReconciliationIndicator",
+    "type": "boolean"
+},"SenderBusinessSystemID" : {
+	"title": "SenderBusinessSystemID",
+    "type": "string"
+},"RecipientBusinessSystemID" : {
+	"title": "RecipientBusinessSystemID",
+    "type": "string"
+},"SenderParty" : {
+	"title": "SenderParty",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"InternalID" : {
+	"title": "InternalID",
+    "type": "string"
+},"StandardID" : {
+	"title": "StandardID",
+    "type": "string"
+},"ContactPerson" : {
+	"title": "ContactPerson",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"InternalID" : {
+	"title": "InternalID",
+    "type": "string"
+},"OrganisationFormattedName" : {
+	"title": "OrganisationFormattedName",
+    "type": "string"
+},"PersonFormattedName" : {
+	"title": "PersonFormattedName",
+    "type": "string"
+},"PhoneNumber" : {
+	"title": "PhoneNumber",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "AreaID" : {
+	"title": "AreaID",
+    "type": "string"
+},"SubscriberID" : {
+	"title": "SubscriberID",
+    "type": "string"
+},"ExtensionID" : {
+	"title": "ExtensionID",
+    "type": "string"
+},"CountryCode" : {
+	"title": "CountryCode",
+    "type": "string"
+},"CountryDiallingCode" : {
+	"title": "CountryDiallingCode",
+    "type": "string"
+},"CountryName" : {
+	"title": "CountryName",
+    "type": "string"
+}
+        }
+	}
+}
+,"FaxNumber" : {
+	"title": "FaxNumber",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "AreaID" : {
+	"title": "AreaID",
+    "type": "string"
+},"SubscriberID" : {
+	"title": "SubscriberID",
+    "type": "string"
+},"ExtensionID" : {
+	"title": "ExtensionID",
+    "type": "string"
+},"CountryCode" : {
+	"title": "CountryCode",
+    "type": "string"
+},"CountryDiallingCode" : {
+	"title": "CountryDiallingCode",
+    "type": "string"
+},"CountryName" : {
+	"title": "CountryName",
+    "type": "string"
+}
+        }
+	}
+}
+,"EmailURI" : {
+	"title": "EmailURI",
+    "type": "string"
+}
+	}
+}
+
+	}
+}
+,"RecipientParty" : {
+	"title": "RecipientParty",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "InternalID" : {
+	"title": "InternalID",
+    "type": "string"
+},"StandardID" : {
+	"title": "StandardID",
+    "type": "string"
+},"ContactPerson" : {
+	"title": "ContactPerson",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"InternalID" : {
+	"title": "InternalID",
+    "type": "string"
+},"OrganisationFormattedName" : {
+	"title": "OrganisationFormattedName",
+    "type": "string"
+},"PersonFormattedName" : {
+	"title": "PersonFormattedName",
+    "type": "string"
+},"PhoneNumber" : {
+	"title": "PhoneNumber",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "AreaID" : {
+	"title": "AreaID",
+    "type": "string"
+},"SubscriberID" : {
+	"title": "SubscriberID",
+    "type": "string"
+},"ExtensionID" : {
+	"title": "ExtensionID",
+    "type": "string"
+},"CountryCode" : {
+	"title": "CountryCode",
+    "type": "string"
+},"CountryDiallingCode" : {
+	"title": "CountryDiallingCode",
+    "type": "string"
+},"CountryName" : {
+	"title": "CountryName",
+    "type": "string"
+}
+        }
+	}
+}
+,"FaxNumber" : {
+	"title": "FaxNumber",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "AreaID" : {
+	"title": "AreaID",
+    "type": "string"
+},"SubscriberID" : {
+	"title": "SubscriberID",
+    "type": "string"
+},"ExtensionID" : {
+	"title": "ExtensionID",
+    "type": "string"
+},"CountryCode" : {
+	"title": "CountryCode",
+    "type": "string"
+},"CountryDiallingCode" : {
+	"title": "CountryDiallingCode",
+    "type": "string"
+},"CountryName" : {
+	"title": "CountryName",
+    "type": "string"
+}
+        }
+	}
+}
+,"EmailURI" : {
+	"title": "EmailURI",
+    "type": "string"
+}
+	}
+}
+
+        }
+	}
+}
+,"BusinessScope" : {
+	"title": "BusinessScope",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "TypeCode" : {
+	"title": "TypeCode",
+    "type": "string"
+},"InstanceID" : {
+	"title": "InstanceID",
+    "type": "string"
+},"ID" : {
+	"title": "ID",
+    "type": "string"
+}
+        }
+	}
+}
+
+	}
+}
+,"SalesOrder" : {
+	"title": "SalesOrder",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"SalesOrderID" : {
+	"title": "SalesOrderID",
+    "type": "string"
+},"ExternalDocumentID" : {
+	"title": "ExternalDocumentID",
+    "type": "string"
+},"Log" : {
+	"title": "Log",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "BusinessDocumentProcessingResultCode" : {
+	"title": "BusinessDocumentProcessingResultCode",
+    "type": "string"
+},"MaximumLogItemSeverityCode" : {
+	"title": "MaximumLogItemSeverityCode",
+    "type": "string"
+},"Item" : {
+	"title": "Item",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "TypeID" : {
+	"title": "TypeID",
+    "type": "string"
+},"CategoryCode" : {
+	"title": "CategoryCode",
+    "type": "string"
+},"SeverityCode" : {
+	"title": "SeverityCode",
+    "type": "string"
+},"Note" : {
+	"title": "Note",
+    "type": "string"
+},"WebURI" : {
+	"title": "WebURI",
+    "type": "string"
+}
+        }
+	}
+}
+
+        }
+	}
+}
+
+	}
+}
+
+        }
+    }
+}

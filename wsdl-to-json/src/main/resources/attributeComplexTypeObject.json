@@ -1,0 +1,8 @@
+"${title}" : {
+	"title": "${title}",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		${attribute}
+	}
+}

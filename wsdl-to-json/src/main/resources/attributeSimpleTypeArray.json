@@ -1,0 +1,8 @@
+"${title}" : {
+	"title": "${title}",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type" : "${type}"
+	}
+}
