@@ -173,8 +173,6 @@ public class ConvertWsdlToJson {
 					String attrType = tmpAttrMap.get("type").contains(":") 
 							? tmpAttrMap.get("type").substring(tmpAttrMap.get("type").indexOf(":")+1) + "": tmpAttrMap.get("type");
 					Node targetNode = getNodeForAttributeTypeAndValue(getParentNode(node), "name", attrType);
-					stringSubstitutor = new StringSubstitutor(
-							Collections.singletonMap("title", targetNode.getAttributes().getNamedItem("name").getNodeValue()));
 					
 					if(complexTypeMap.keySet().stream().anyMatch(k -> k.containsKey(attrType) )) {
 						if(complexTypeMap.entrySet().stream()
@@ -272,7 +270,6 @@ public class ConvertWsdlToJson {
 					
 				} else if(node.getChildNodes().item(i).hasChildNodes()) {
 					matchingNode = getNodeForAttributeTypeAndValue(node.getChildNodes().item(i), attrType, value);
-					//return getNodeForAttributeTypeAndValue(node.getChildNodes().item(i), attrType, value);
 				}
 				
 			} else if(node.getChildNodes().item(i).hasChildNodes()) {
@@ -346,7 +343,7 @@ public class ConvertWsdlToJson {
 
 	private static Map<String, String> getMessageNameTypeMap(NodeList rootNodeList){
 		
-		Map<String,String> messageNameElementMap = new HashMap<String,String>();
+		Map<String,String> messageNameElementMap = new HashMap<>();
 		
 		for(int j = 0; j < rootNodeList.getLength(); j++) {
 			
@@ -371,7 +368,7 @@ public class ConvertWsdlToJson {
 	/* For fetching namespaces map */
 	private static Map<String, String> getNameElementMap(NamedNodeMap namedNodeMap) {
 		
-		Map<String,String> nameTypeMap = new HashMap<String, String>();
+		Map<String,String> nameTypeMap = new HashMap<>();
 		
 		for(int i=0; i < namedNodeMap.getLength(); i++) {
 					
