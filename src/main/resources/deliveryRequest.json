@@ -1,0 +1,1589 @@
+{
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "string"
+            },
+            "MessageHeader" : {
+	"title": "MessageHeader",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"ID" : {
+	"title": "ID",
+    "type": "string"
+},"ReferenceID" : {
+	"title": "ReferenceID",
+    "type": "string"
+},"CreationDateTime" : {
+	"title": "CreationDateTime",
+	"type": "string",
+	"format": "date-time"
+}
+,"ReconciliationIndicator" : {
+	"title": "ReconciliationIndicator",
+    "type": "boolean"
+},"SenderBusinessSystemID" : {
+	"title": "SenderBusinessSystemID",
+    "type": "string"
+},"RecipientBusinessSystemID" : {
+	"title": "RecipientBusinessSystemID",
+    "type": "string"
+},"SenderParty" : {
+	"title": "SenderParty",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"InternalID" : {
+	"title": "InternalID",
+    "type": "string"
+},"StandardID" : {
+	"title": "StandardID",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type" : "string"
+	}
+}
+,"ContactPerson" : {
+	"title": "ContactPerson",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"InternalID" : {
+	"title": "InternalID",
+    "type": "string"
+},"OrganisationFormattedName" : {
+	"title": "OrganisationFormattedName",
+    "type": "string"
+},"PersonFormattedName" : {
+	"title": "PersonFormattedName",
+    "type": "string"
+},"PhoneNumber" : {
+	"title": "PhoneNumber",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "AreaID" : {
+	"title": "AreaID",
+    "type": "string"
+},"SubscriberID" : {
+	"title": "SubscriberID",
+    "type": "string"
+},"ExtensionID" : {
+	"title": "ExtensionID",
+    "type": "string"
+},"CountryCode" : {
+	"title": "CountryCode",
+    "type": "string"
+},"CountryDiallingCode" : {
+	"title": "CountryDiallingCode",
+    "type": "string"
+},"CountryName" : {
+	"title": "CountryName",
+    "type": "string"
+}
+        }
+	}
+}
+,"FaxNumber" : {
+	"title": "FaxNumber",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "AreaID" : {
+	"title": "AreaID",
+    "type": "string"
+},"SubscriberID" : {
+	"title": "SubscriberID",
+    "type": "string"
+},"ExtensionID" : {
+	"title": "ExtensionID",
+    "type": "string"
+},"CountryCode" : {
+	"title": "CountryCode",
+    "type": "string"
+},"CountryDiallingCode" : {
+	"title": "CountryDiallingCode",
+    "type": "string"
+},"CountryName" : {
+	"title": "CountryName",
+    "type": "string"
+}
+        }
+	}
+}
+,"EmailURI" : {
+	"title": "EmailURI",
+    "type": "string"
+}
+	}
+}
+
+	}
+}
+,"RecipientParty" : {
+	"title": "RecipientParty",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "InternalID" : {
+	"title": "InternalID",
+    "type": "string"
+},"StandardID" : {
+	"title": "StandardID",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type" : "string"
+	}
+}
+,"ContactPerson" : {
+	"title": "ContactPerson",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"InternalID" : {
+	"title": "InternalID",
+    "type": "string"
+},"OrganisationFormattedName" : {
+	"title": "OrganisationFormattedName",
+    "type": "string"
+},"PersonFormattedName" : {
+	"title": "PersonFormattedName",
+    "type": "string"
+},"PhoneNumber" : {
+	"title": "PhoneNumber",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "AreaID" : {
+	"title": "AreaID",
+    "type": "string"
+},"SubscriberID" : {
+	"title": "SubscriberID",
+    "type": "string"
+},"ExtensionID" : {
+	"title": "ExtensionID",
+    "type": "string"
+},"CountryCode" : {
+	"title": "CountryCode",
+    "type": "string"
+},"CountryDiallingCode" : {
+	"title": "CountryDiallingCode",
+    "type": "string"
+},"CountryName" : {
+	"title": "CountryName",
+    "type": "string"
+}
+        }
+	}
+}
+,"FaxNumber" : {
+	"title": "FaxNumber",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "AreaID" : {
+	"title": "AreaID",
+    "type": "string"
+},"SubscriberID" : {
+	"title": "SubscriberID",
+    "type": "string"
+},"ExtensionID" : {
+	"title": "ExtensionID",
+    "type": "string"
+},"CountryCode" : {
+	"title": "CountryCode",
+    "type": "string"
+},"CountryDiallingCode" : {
+	"title": "CountryDiallingCode",
+    "type": "string"
+},"CountryName" : {
+	"title": "CountryName",
+    "type": "string"
+}
+        }
+	}
+}
+,"EmailURI" : {
+	"title": "EmailURI",
+    "type": "string"
+}
+	}
+}
+
+        }
+	}
+}
+,"BusinessScope" : {
+	"title": "BusinessScope",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "TypeCode" : {
+	"title": "TypeCode",
+    "type": "string"
+},"InstanceID" : {
+	"title": "InstanceID",
+    "type": "string"
+},"ID" : {
+	"title": "ID",
+    "type": "string"
+}
+        }
+	}
+}
+
+	}
+}
+,"Delivery" : {
+	"title": "Delivery",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"DeliveryDocument" : {
+	"title": "DeliveryDocument",
+    "type": "string"
+},"DeliveryDocumentBySupplier" : {
+	"title": "DeliveryDocumentBySupplier",
+    "type": "string"
+},"SalesOrganization" : {
+	"title": "SalesOrganization",
+    "type": "string"
+},"SalesOffice" : {
+	"title": "SalesOffice",
+    "type": "string"
+},"ShippingPoint" : {
+	"title": "ShippingPoint",
+    "type": "string"
+},"Party" : {
+	"title": "Party",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "GlobalLocationNumber" : {
+	"title": "GlobalLocationNumber",
+    "type": "string"
+},"BuyerPartyID" : {
+	"title": "BuyerPartyID",
+    "type": "string"
+},"SupplierPartyID" : {
+	"title": "SupplierPartyID",
+    "type": "string"
+},"Address" : {
+	"title": "Address",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"FormOfAddress" : {
+	"title": "FormOfAddress",
+    "type": "string"
+},"FormOfAddressName" : {
+	"title": "FormOfAddressName",
+    "type": "string"
+},"AddressName" : {
+	"title": "AddressName",
+    "type": "string"
+},"AddressAdditionalName" : {
+	"title": "AddressAdditionalName",
+    "type": "string"
+},"StreetName" : {
+	"title": "StreetName",
+    "type": "string"
+},"HouseNumber" : {
+	"title": "HouseNumber",
+    "type": "string"
+},"StreetAddressName" : {
+	"title": "StreetAddressName",
+    "type": "string"
+},"PostalCode" : {
+	"title": "PostalCode",
+    "type": "string"
+},"CityName" : {
+	"title": "CityName",
+    "type": "string"
+},"Country" : {
+	"title": "Country",
+    "type": "string"
+},"District" : {
+	"title": "District",
+    "type": "string"
+},"Region" : {
+	"title": "Region",
+    "type": "string"
+},"PhoneNumber" : {
+	"title": "PhoneNumber",
+    "type": "string"
+},"FaxNumber" : {
+	"title": "FaxNumber",
+    "type": "string"
+},"EmailAddress" : {
+	"title": "EmailAddress",
+    "type": "string"
+},"CorrespondenceLanguage" : {
+	"title": "CorrespondenceLanguage",
+    "type": "string"
+},"ExternalAddressParserCode" : {
+	"title": "ExternalAddressParserCode",
+    "type": "string"
+}
+	}
+}
+
+        }
+	}
+}
+,"LoadingPoint" : {
+	"title": "LoadingPoint",
+    "type": "string"
+},"UnloadingPointName" : {
+	"title": "UnloadingPointName",
+    "type": "string"
+},"PickingDateTime" : {
+	"title": "PickingDateTime",
+    "type": "string"
+},"LoadingDateTime" : {
+	"title": "LoadingDateTime",
+    "type": "string"
+},"GoodsIssueDateTime" : {
+	"title": "GoodsIssueDateTime",
+    "type": "string"
+},"ProofOfDeliveryDateTime" : {
+	"title": "ProofOfDeliveryDateTime",
+    "type": "string"
+},"ActualGoodsMovementDateTime" : {
+	"title": "ActualGoodsMovementDateTime",
+    "type": "string"
+},"DeliveryDateTime" : {
+	"title": "DeliveryDateTime",
+    "type": "string"
+},"DocumentDate" : {
+	"title": "DocumentDate",
+    "type": "string"
+},"IsCopyWeightVolumeRequested" : {
+	"title": "IsCopyWeightVolumeRequested",
+    "type": "boolean"
+},"HeaderGrossWeight" : {
+	"title": "HeaderGrossWeight",
+    "type": "string"
+},"HeaderNetWeight" : {
+	"title": "HeaderNetWeight",
+    "type": "string"
+},"HeaderVolume" : {
+	"title": "HeaderVolume",
+    "type": "string"
+},"Incoterms" : {
+	"title": "Incoterms",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"IncotermsVersion" : {
+	"title": "IncotermsVersion",
+    "type": "string"
+},"IncotermsClassification" : {
+	"title": "IncotermsClassification",
+    "type": "string"
+},"IncotermsLocation1" : {
+	"title": "IncotermsLocation1",
+    "type": "string"
+},"IncotermsLocation2" : {
+	"title": "IncotermsLocation2",
+    "type": "string"
+}
+	}
+}
+,"BillOfLading" : {
+	"title": "BillOfLading",
+    "type": "string"
+},"MeansOfTransportType" : {
+	"title": "MeansOfTransportType",
+    "type": "string"
+},"MeansOfTransport" : {
+	"title": "MeansOfTransport",
+    "type": "string"
+},"ProposedDeliveryRoute" : {
+	"title": "ProposedDeliveryRoute",
+    "type": "string"
+},"ShippingCondition" : {
+	"title": "ShippingCondition",
+    "type": "string"
+},"GoodsIssueOrReceiptSlipNumberID" : {
+	"title": "GoodsIssueOrReceiptSlipNumberID",
+    "type": "string"
+},"JustInTimeHeader" : {
+	"title": "JustInTimeHeader",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"JITCallType" : {
+	"title": "JITCallType",
+    "type": "string"
+},"ExternalJITCallNumber" : {
+	"title": "ExternalJITCallNumber",
+    "type": "string"
+},"ExtCompGrpNumber" : {
+	"title": "ExtCompGrpNumber",
+    "type": "string"
+},"PckgGrpNumber" : {
+	"title": "PckgGrpNumber",
+    "type": "string"
+},"PckgGrpIndex" : {
+	"title": "PckgGrpIndex",
+    "type": "string"
+},"JITComponentIsReordered" : {
+	"title": "JITComponentIsReordered",
+    "type": "boolean"
+}
+	}
+}
+,"DeliveryPriority" : {
+	"title": "DeliveryPriority",
+    "type": "string"
+},"IsExportDelivery" : {
+	"title": "IsExportDelivery",
+    "type": "boolean"
+},"SpecialProcessingCode" : {
+	"title": "SpecialProcessingCode",
+    "type": "string"
+},"Text" : {
+	"title": "Text",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "BuyerTextElementID" : {
+	"title": "BuyerTextElementID",
+    "type": "string"
+},"SupplierTextElementID" : {
+	"title": "SupplierTextElementID",
+    "type": "string"
+},"TextElementLanguage" : {
+	"title": "TextElementLanguage",
+    "type": "string"
+},"TextElementText" : {
+	"title": "TextElementText",
+    "type": "string"
+},"TextElementTextFormat" : {
+	"title": "TextElementTextFormat",
+    "type": "string"
+}
+        }
+	}
+}
+,"DeliveryItem" : {
+	"title": "DeliveryItem",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "DeliveryDocumentItem" : {
+	"title": "DeliveryDocumentItem",
+    "type": "string"
+},"DeliveryDocumentItemBySupplier" : {
+	"title": "DeliveryDocumentItemBySupplier",
+    "type": "string"
+},"Material" : {
+	"title": "Material",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"GlobalTradeItemNumber" : {
+	"title": "GlobalTradeItemNumber",
+    "type": "string"
+},"BuyerProductID" : {
+	"title": "BuyerProductID",
+    "type": "string"
+},"SupplierProductID" : {
+	"title": "SupplierProductID",
+    "type": "string"
+}
+	}
+}
+,"ActualDeliveryQuantity" : {
+	"title": "ActualDeliveryQuantity",
+    "type": "string"
+},"ActualDeliveredQtyInBaseUnit" : {
+	"title": "ActualDeliveredQtyInBaseUnit",
+    "type": "string"
+},"OriginalDeliveryQuantity" : {
+	"title": "OriginalDeliveryQuantity",
+    "type": "string"
+},"DeliveryDocumentItemCategory" : {
+	"title": "DeliveryDocumentItemCategory",
+    "type": "string"
+},"DeliveryDocumentItemText" : {
+	"title": "DeliveryDocumentItemText",
+    "type": "string"
+},"ItemNetWeight" : {
+	"title": "ItemNetWeight",
+    "type": "string"
+},"ItemGrossWeight" : {
+	"title": "ItemGrossWeight",
+    "type": "string"
+},"ItemVolume" : {
+	"title": "ItemVolume",
+    "type": "string"
+},"Batch" : {
+	"title": "Batch",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"Batch" : {
+	"title": "Batch",
+    "type": "string"
+},"BatchBySupplier" : {
+	"title": "BatchBySupplier",
+    "type": "string"
+},"ManufactureDate" : {
+	"title": "ManufactureDate",
+    "type": "string"
+},"ShelfLifeExpirationDate" : {
+	"title": "ShelfLifeExpirationDate",
+    "type": "string"
+},"Characteristics" : {
+	"title": "Characteristics",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "CharcValueDescription" : {
+	"title": "CharcValueDescription",
+    "type": "string"
+},"CharcValue" : {
+	"title": "CharcValue",
+    "type": "string"
+},"CharcDescription" : {
+	"title": "CharcDescription",
+    "type": "string"
+},"Characteristic" : {
+	"title": "Characteristic",
+    "type": "string"
+},"CharcInternalID" : {
+	"title": "CharcInternalID",
+    "type": "string"
+}
+        }
+	}
+}
+
+	}
+}
+,"Plant" : {
+	"title": "Plant",
+    "type": "string"
+},"StorageLocation" : {
+	"title": "StorageLocation",
+    "type": "string"
+},"StorageBin" : {
+	"title": "StorageBin",
+    "type": "string"
+},"DistributionChannel" : {
+	"title": "DistributionChannel",
+    "type": "string"
+},"Division" : {
+	"title": "Division",
+    "type": "string"
+},"SalesOffice" : {
+	"title": "SalesOffice",
+    "type": "string"
+},"SalesGroup" : {
+	"title": "SalesGroup",
+    "type": "string"
+},"ReceivingPoint" : {
+	"title": "ReceivingPoint",
+    "type": "string"
+},"LoadingGroup" : {
+	"title": "LoadingGroup",
+    "type": "string"
+},"TransportationGroup" : {
+	"title": "TransportationGroup",
+    "type": "string"
+},"DeliveryGroup" : {
+	"title": "DeliveryGroup",
+    "type": "string"
+},"HierarchyRelationship" : {
+	"title": "HierarchyRelationship",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "HigherLevelItem" : {
+	"title": "HigherLevelItem",
+    "type": "string"
+},"HierarchyItemCode" : {
+	"title": "HierarchyItemCode",
+    "type": "string"
+}
+        }
+	}
+}
+,"UnderlyingPurchaseOrder" : {
+	"title": "UnderlyingPurchaseOrder",
+    "type": "string"
+},"UnderlyingPurchaseOrderItem" : {
+	"title": "UnderlyingPurchaseOrderItem",
+    "type": "string"
+},"ReferenceSDDocument" : {
+	"title": "ReferenceSDDocument",
+    "type": "string"
+},"ReferenceSDDocumentItem" : {
+	"title": "ReferenceSDDocumentItem",
+    "type": "string"
+},"ExternalSDDocument" : {
+	"title": "ExternalSDDocument",
+    "type": "string"
+},"ExternalSDDocumentItem" : {
+	"title": "ExternalSDDocumentItem",
+    "type": "string"
+},"DeliveryToBaseQuantityDnmntr" : {
+	"title": "DeliveryToBaseQuantityDnmntr",
+    "type": "string"
+},"DeliveryToBaseQuantityNmrtr" : {
+	"title": "DeliveryToBaseQuantityNmrtr",
+    "type": "string"
+},"SalesDocumentItemType" : {
+	"title": "SalesDocumentItemType",
+    "type": "string"
+},"UnlimitedOverdeliveryIsAllowed" : {
+	"title": "UnlimitedOverdeliveryIsAllowed",
+    "type": "boolean"
+},"UnderdelivTolrtdLmtRatioInPct" : {
+	"title": "UnderdelivTolrtdLmtRatioInPct",
+    "type": "number"
+},"OverdelivTolrtdLmtRatioInPct" : {
+	"title": "OverdelivTolrtdLmtRatioInPct",
+    "type": "number"
+},"MaterialGroup" : {
+	"title": "MaterialGroup",
+    "type": "string"
+},"InventorySpecialStockType" : {
+	"title": "InventorySpecialStockType",
+    "type": "string"
+},"AdditionalCustomerGroup1" : {
+	"title": "AdditionalCustomerGroup1",
+    "type": "string"
+},"AdditionalCustomerGroup2" : {
+	"title": "AdditionalCustomerGroup2",
+    "type": "string"
+},"AdditionalCustomerGroup3" : {
+	"title": "AdditionalCustomerGroup3",
+    "type": "string"
+},"AdditionalCustomerGroup4" : {
+	"title": "AdditionalCustomerGroup4",
+    "type": "string"
+},"AdditionalCustomerGroup5" : {
+	"title": "AdditionalCustomerGroup5",
+    "type": "string"
+},"AdditionalMaterialGroup1" : {
+	"title": "AdditionalMaterialGroup1",
+    "type": "string"
+},"AdditionalMaterialGroup2" : {
+	"title": "AdditionalMaterialGroup2",
+    "type": "string"
+},"AdditionalMaterialGroup3" : {
+	"title": "AdditionalMaterialGroup3",
+    "type": "string"
+},"AdditionalMaterialGroup4" : {
+	"title": "AdditionalMaterialGroup4",
+    "type": "string"
+},"AdditionalMaterialGroup5" : {
+	"title": "AdditionalMaterialGroup5",
+    "type": "string"
+},"Serial" : {
+	"title": "Serial",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "SerialNumber" : {
+	"title": "SerialNumber",
+    "type": "string"
+},"UniqueItemIdentifier" : {
+	"title": "UniqueItemIdentifier",
+    "type": "string"
+}
+        }
+	}
+}
+,"JustInTimeItem" : {
+	"title": "JustInTimeItem",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "JITCallType" : {
+	"title": "JITCallType",
+    "type": "string"
+},"ExternalJITCallNumber" : {
+	"title": "ExternalJITCallNumber",
+    "type": "string"
+},"ExtCompGrpNumber" : {
+	"title": "ExtCompGrpNumber",
+    "type": "string"
+},"PckgGrpNumber" : {
+	"title": "PckgGrpNumber",
+    "type": "string"
+},"PckgGrpIndex" : {
+	"title": "PckgGrpIndex",
+    "type": "string"
+},"ExtJITCallItemNumber" : {
+	"title": "ExtJITCallItemNumber",
+    "type": "string"
+},"ActualDeliveredQuantity" : {
+	"title": "ActualDeliveredQuantity",
+    "type": "string"
+},"QuantityUnit" : {
+	"title": "QuantityUnit",
+    "type": "string"
+}
+        }
+	}
+}
+,"CustEngineeringChgStatus" : {
+	"title": "CustEngineeringChgStatus",
+    "type": "string"
+},"MatlUsageIndicator" : {
+	"title": "MatlUsageIndicator",
+    "type": "string"
+},"CustomsPreference" : {
+	"title": "CustomsPreference",
+    "type": "string"
+},"DeliveryCategory" : {
+	"title": "DeliveryCategory",
+    "type": "string"
+},"PrecedingDocumentCategory" : {
+	"title": "PrecedingDocumentCategory",
+    "type": "string"
+},"Text" : {
+	"title": "Text",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "BuyerTextElementID" : {
+	"title": "BuyerTextElementID",
+    "type": "string"
+},"SupplierTextElementID" : {
+	"title": "SupplierTextElementID",
+    "type": "string"
+},"TextElementLanguage" : {
+	"title": "TextElementLanguage",
+    "type": "string"
+},"TextElementText" : {
+	"title": "TextElementText",
+    "type": "string"
+},"TextElementTextFormat" : {
+	"title": "TextElementTextFormat",
+    "type": "string"
+}
+        }
+	}
+}
+,"DangerousGoodInformation" : {
+	"title": "DangerousGoodInformation",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"BasicInformation" : {
+	"title": "BasicInformation",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"OrderQuantity" : {
+	"title": "OrderQuantity",
+    "type": "string"
+},"DangerousGoodsEnclosureQty" : {
+	"title": "DangerousGoodsEnclosureQty",
+    "type": "string"
+},"Regulation" : {
+	"title": "Regulation",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "ComplianceRequirement" : {
+	"title": "ComplianceRequirement",
+    "type": "string"
+},"DescriptionOfDngrsGdsPckg" : {
+	"title": "DescriptionOfDngrsGdsPckg",
+    "type": "string"
+},"DescOfDngrsGdsPckgName" : {
+	"title": "DescOfDngrsGdsPckgName",
+    "type": "string"
+},"ModeOfTransport" : {
+	"title": "ModeOfTransport",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "DngrsGoodsModeOfTransport" : {
+	"title": "DngrsGoodsModeOfTransport",
+    "type": "string"
+},"ItemIsDangerousGood" : {
+	"title": "ItemIsDangerousGood",
+    "type": "boolean"
+},"TransportIsAllowed" : {
+	"title": "TransportIsAllowed",
+    "type": "boolean"
+},"DangerousGoodsIdnNumberType" : {
+	"title": "DangerousGoodsIdnNumberType",
+    "type": "string"
+},"DangerousGoodsIdnNumber" : {
+	"title": "DangerousGoodsIdnNumber",
+    "type": "string"
+},"DangerousGoodsPackingGroup" : {
+	"title": "DangerousGoodsPackingGroup",
+    "type": "string"
+},"DangerousGoodsClass" : {
+	"title": "DangerousGoodsClass",
+    "type": "string"
+},"EnclosureVariant" : {
+	"title": "EnclosureVariant",
+    "type": "string"
+},"EnclosureVariantName" : {
+	"title": "EnclosureVariantName",
+    "type": "string"
+},"DangerousGoodDescForDocuments" : {
+	"title": "DangerousGoodDescForDocuments",
+    "type": "string"
+}
+        }
+	}
+}
+
+        }
+	}
+}
+
+	}
+}
+,"ExtendedInformation" : {
+	"title": "ExtendedInformation",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"DngrsGdsEnclrNmbrOfInnerPckgs" : {
+	"title": "DngrsGdsEnclrNmbrOfInnerPckgs",
+    "type": "string"
+},"DngrsGdsEnclrInnerPackageQty" : {
+	"title": "DngrsGdsEnclrInnerPackageQty",
+    "type": "string"
+},"OpenCupFlashPointTemperature" : {
+	"title": "OpenCupFlashPointTemperature",
+    "type": "string"
+},"ClosedCupFlashPointTemperature" : {
+	"title": "ClosedCupFlashPointTemperature",
+    "type": "string"
+},"ChmlDensityAt20DegCelsiusQty" : {
+	"title": "ChmlDensityAt20DegCelsiusQty",
+    "type": "string"
+},"ChmlDensityAt15DegCelsiusQty" : {
+	"title": "ChmlDensityAt15DegCelsiusQty",
+    "type": "string"
+},"ChmlDensityAt50DegCelsiusQty" : {
+	"title": "ChmlDensityAt50DegCelsiusQty",
+    "type": "string"
+},"ChemicalBulkDensityQuantity" : {
+	"title": "ChemicalBulkDensityQuantity",
+    "type": "string"
+},"StateOfMatter" : {
+	"title": "StateOfMatter",
+    "type": "string"
+},"DvtgStateOfMatterForTransport" : {
+	"title": "DvtgStateOfMatterForTransport",
+    "type": "string"
+},"ControlTemperature" : {
+	"title": "ControlTemperature",
+    "type": "string"
+},"EmergencyTemperature" : {
+	"title": "EmergencyTemperature",
+    "type": "string"
+},"ChmlTempSenstvyLowrLmtTemp" : {
+	"title": "ChmlTempSenstvyLowrLmtTemp",
+    "type": "string"
+},"ChmlTempSenstvyUprLmtTemp" : {
+	"title": "ChmlTempSenstvyUprLmtTemp",
+    "type": "string"
+},"FillingTemperature" : {
+	"title": "FillingTemperature",
+    "type": "string"
+},"KinematicViscosityQuantity" : {
+	"title": "KinematicViscosityQuantity",
+    "type": "string"
+},"DangerousGoodsHazardNote" : {
+	"title": "DangerousGoodsHazardNote",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "DangerousGoodsHazardNoteCode" : {
+	"title": "DangerousGoodsHazardNoteCode",
+    "type": "string"
+},"DangerousGoodsHazardNote" : {
+	"title": "DangerousGoodsHazardNote",
+    "type": "string"
+}
+        }
+	}
+}
+,"EnterpriseSegregationGroup" : {
+	"title": "EnterpriseSegregationGroup",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "EnterpriseSegregationGroup" : {
+	"title": "EnterpriseSegregationGroup",
+    "type": "string"
+},"EnterpriseSegregationGroupDescription" : {
+	"title": "EnterpriseSegregationGroupDescription",
+    "type": "string"
+}
+        }
+	}
+}
+,"Regulation" : {
+	"title": "Regulation",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "ComplianceRequirement" : {
+	"title": "ComplianceRequirement",
+    "type": "string"
+},"DangerousGoodsPackagingCode" : {
+	"title": "DangerousGoodsPackagingCode",
+    "type": "string"
+},"DescOfDngrsGdsInnerPackgg" : {
+	"title": "DescOfDngrsGdsInnerPackgg",
+    "type": "string"
+},"DescOfDngrsGdsInnerPackggName" : {
+	"title": "DescOfDngrsGdsInnerPackggName",
+    "type": "string"
+},"ModeOfTransport" : {
+	"title": "ModeOfTransport",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "DngrsGoodsModeOfTransport" : {
+	"title": "DngrsGoodsModeOfTransport",
+    "type": "string"
+},"AppliedSpecialProvision" : {
+	"title": "AppliedSpecialProvision",
+    "type": "string"
+},"DangerousGoodsSubsidiaryRisk1" : {
+	"title": "DangerousGoodsSubsidiaryRisk1",
+    "type": "string"
+},"DangerousGoodsSubsidiaryRisk2" : {
+	"title": "DangerousGoodsSubsidiaryRisk2",
+    "type": "string"
+},"DangerousGoodsSubsidiaryRisk3" : {
+	"title": "DangerousGoodsSubsidiaryRisk3",
+    "type": "string"
+},"DangerousGoodsEUADRClass" : {
+	"title": "DangerousGoodsEUADRClass",
+    "type": "string"
+},"DangerousGoodsHazardIdnNumber" : {
+	"title": "DangerousGoodsHazardIdnNumber",
+    "type": "string"
+},"HazardChmlEmergencyActnCode" : {
+	"title": "HazardChmlEmergencyActnCode",
+    "type": "string"
+},"EmergencyResponseGuidebookCode" : {
+	"title": "EmergencyResponseGuidebookCode",
+    "type": "string"
+},"InitialEmergencyRspGuideCode" : {
+	"title": "InitialEmergencyRspGuideCode",
+    "type": "string"
+},"IMDGEmSchedFire" : {
+	"title": "IMDGEmSchedFire",
+    "type": "string"
+},"IMDGEmSchedFireIsUnderlined" : {
+	"title": "IMDGEmSchedFireIsUnderlined",
+    "type": "boolean"
+},"IMDGEmSchedSpill" : {
+	"title": "IMDGEmSchedSpill",
+    "type": "string"
+},"IMDGEmSchedSpillIsUnderlined" : {
+	"title": "IMDGEmSchedSpillIsUnderlined",
+    "type": "boolean"
+},"TunnelRestrictionCode" : {
+	"title": "TunnelRestrictionCode",
+    "type": "string"
+},"DangerousGoodsTransportCat" : {
+	"title": "DangerousGoodsTransportCat",
+    "type": "string"
+},"MaxTotalQtyPerTransptUnit" : {
+	"title": "MaxTotalQtyPerTransptUnit",
+    "type": "string"
+},"DangerousGoodsQuantityFactor" : {
+	"title": "DangerousGoodsQuantityFactor",
+    "type": "string"
+},"DangerousGoodsQuantityType" : {
+	"title": "DangerousGoodsQuantityType",
+    "type": "string"
+},"DangerousGoodsQtyPointsValue" : {
+	"title": "DangerousGoodsQtyPointsValue",
+    "type": "string"
+},"ProdIsEnvironmentalHazardous" : {
+	"title": "ProdIsEnvironmentalHazardous",
+    "type": "boolean"
+},"EnvironmentallyHzdsPrintOutput" : {
+	"title": "EnvironmentallyHzdsPrintOutput",
+    "type": "string"
+},"ProductIsMarinePollutant" : {
+	"title": "ProductIsMarinePollutant",
+    "type": "boolean"
+},"DangerousGoodsReportableQty1" : {
+	"title": "DangerousGoodsReportableQty1",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"DangerousGoodsReportableQty" : {
+	"title": "DangerousGoodsReportableQty",
+    "type": "string"
+},"DngrsGdsReportableQtyName" : {
+	"title": "DngrsGdsReportableQtyName",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "BuyerTextElementID" : {
+	"title": "BuyerTextElementID",
+    "type": "string"
+},"SupplierTextElementID" : {
+	"title": "SupplierTextElementID",
+    "type": "string"
+},"TextElementLanguage" : {
+	"title": "TextElementLanguage",
+    "type": "string"
+},"TextElementText" : {
+	"title": "TextElementText",
+    "type": "string"
+},"TextElementTextFormat" : {
+	"title": "TextElementTextFormat",
+    "type": "string"
+}
+        }
+	}
+}
+
+	}
+}
+,"DangerousGoodsReportableQty2" : {
+	"title": "DangerousGoodsReportableQty2",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"DangerousGoodsReportableQty" : {
+	"title": "DangerousGoodsReportableQty",
+    "type": "string"
+},"DngrsGdsReportableQtyName" : {
+	"title": "DngrsGdsReportableQtyName",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "BuyerTextElementID" : {
+	"title": "BuyerTextElementID",
+    "type": "string"
+},"SupplierTextElementID" : {
+	"title": "SupplierTextElementID",
+    "type": "string"
+},"TextElementLanguage" : {
+	"title": "TextElementLanguage",
+    "type": "string"
+},"TextElementText" : {
+	"title": "TextElementText",
+    "type": "string"
+},"TextElementTextFormat" : {
+	"title": "TextElementTextFormat",
+    "type": "string"
+}
+        }
+	}
+}
+
+	}
+}
+,"OnlyReportableQtyIsToBePrinted" : {
+	"title": "OnlyReportableQtyIsToBePrinted",
+    "type": "boolean"
+},"ToxicByInhalationHazardZone" : {
+	"title": "ToxicByInhalationHazardZone",
+    "type": "string"
+},"EnclosureInstructionNumber" : {
+	"title": "EnclosureInstructionNumber",
+    "type": "string"
+},"TransportEmergencyCard" : {
+	"title": "TransportEmergencyCard",
+    "type": "string"
+},"ProperShippingName" : {
+	"title": "ProperShippingName",
+    "type": "string"
+},"DangerousGoodsTechnicalName1" : {
+	"title": "DangerousGoodsTechnicalName1",
+    "type": "string"
+},"DangerousGoodsTechnicalName2" : {
+	"title": "DangerousGoodsTechnicalName2",
+    "type": "string"
+},"DangerousGoodsTechnicalName3" : {
+	"title": "DangerousGoodsTechnicalName3",
+    "type": "string"
+},"MarinePollutantName1" : {
+	"title": "MarinePollutantName1",
+    "type": "string"
+},"MarinePollutantName2" : {
+	"title": "MarinePollutantName2",
+    "type": "string"
+},"DngrsGdsQualifgWordPrefixText" : {
+	"title": "DngrsGdsQualifgWordPrefixText",
+    "type": "string"
+},"DngrsGdsQualifgWordSuffixText" : {
+	"title": "DngrsGdsQualifgWordSuffixText",
+    "type": "string"
+},"DngrsGdsInfoForPackagingText" : {
+	"title": "DngrsGdsInfoForPackagingText",
+    "type": "string"
+},"DngrsGdsInfoForLabelingText" : {
+	"title": "DngrsGdsInfoForLabelingText",
+    "type": "string"
+},"DngrsGdsInfoForDocumentsText" : {
+	"title": "DngrsGdsInfoForDocumentsText",
+    "type": "string"
+},"DangerousGoodsHandlingLabel" : {
+	"title": "DangerousGoodsHandlingLabel",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "DngrsGdsHandlingLabelCode" : {
+	"title": "DngrsGdsHandlingLabelCode",
+    "type": "string"
+},"DngrsGdsHandlingLabelName" : {
+	"title": "DngrsGdsHandlingLabelName",
+    "type": "string"
+}
+        }
+	}
+}
+,"DangerousGoodsHazardLabel" : {
+	"title": "DangerousGoodsHazardLabel",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "DangerousGoodsHazardLabelCode" : {
+	"title": "DangerousGoodsHazardLabelCode",
+    "type": "string"
+},"DangerousGoodsHazardLabelName" : {
+	"title": "DangerousGoodsHazardLabelName",
+    "type": "string"
+}
+        }
+	}
+}
+,"DangerousGoodsHazardMark" : {
+	"title": "DangerousGoodsHazardMark",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "DngrsGdsHazardMarkCode" : {
+	"title": "DngrsGdsHazardMarkCode",
+    "type": "string"
+},"DngrsGdsHazardMarkName" : {
+	"title": "DngrsGdsHazardMarkName",
+    "type": "string"
+}
+        }
+	}
+}
+,"SegregationGroup" : {
+	"title": "SegregationGroup",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "SegregationGroup" : {
+	"title": "SegregationGroup",
+    "type": "string"
+},"SegregationGroupDescription" : {
+	"title": "SegregationGroupDescription",
+    "type": "string"
+}
+        }
+	}
+}
+
+        }
+	}
+}
+
+        }
+	}
+}
+
+	}
+}
+
+	}
+}
+
+        }
+	}
+}
+,"HandlingUnit" : {
+	"title": "HandlingUnit",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "ID" : {
+	"title": "ID",
+    "type": "string"
+},"AlternativeID" : {
+	"title": "AlternativeID",
+    "type": "string"
+},"LoadCarrier" : {
+	"title": "LoadCarrier",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"Product" : {
+	"title": "Product",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"GlobalTradeItemNumber" : {
+	"title": "GlobalTradeItemNumber",
+    "type": "string"
+},"BuyerProductID" : {
+	"title": "BuyerProductID",
+    "type": "string"
+},"SupplierProductID" : {
+	"title": "SupplierProductID",
+    "type": "string"
+}
+	}
+}
+
+	}
+}
+,"HeightMeasure" : {
+	"title": "HeightMeasure",
+    "type": "string"
+},"LengthMeasure" : {
+	"title": "LengthMeasure",
+    "type": "string"
+},"WidthMeasure" : {
+	"title": "WidthMeasure",
+    "type": "string"
+},"GrossVolumeMeasure" : {
+	"title": "GrossVolumeMeasure",
+    "type": "string"
+},"NetVolumeMeasure" : {
+	"title": "NetVolumeMeasure",
+    "type": "string"
+},"GrossWeightMeasure" : {
+	"title": "GrossWeightMeasure",
+    "type": "string"
+},"NetWeightMeasure" : {
+	"title": "NetWeightMeasure",
+    "type": "string"
+},"AdditionalPackaging" : {
+	"title": "AdditionalPackaging",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "Product" : {
+	"title": "Product",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"GlobalTradeItemNumber" : {
+	"title": "GlobalTradeItemNumber",
+    "type": "string"
+},"BuyerProductID" : {
+	"title": "BuyerProductID",
+    "type": "string"
+},"SupplierProductID" : {
+	"title": "SupplierProductID",
+    "type": "string"
+}
+	}
+}
+,"Quantity" : {
+	"title": "Quantity",
+    "type": "string"
+}
+        }
+	}
+}
+,"LowerLevelHandlingUnit" : {
+	"title": "LowerLevelHandlingUnit",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "ID" : {
+	"title": "ID",
+    "type": "string"
+}
+        }
+	}
+}
+,"Load" : {
+	"title": "Load",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "BusinessTransactionDocumentReference" : {
+	"title": "BusinessTransactionDocumentReference",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"ID" : {
+	"title": "ID",
+    "type": "string"
+},"ItemID" : {
+	"title": "ItemID",
+    "type": "string"
+}
+	}
+}
+,"Quantity" : {
+	"title": "Quantity",
+    "type": "string"
+},"SerialID" : {
+	"title": "SerialID",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type" : "string"
+	}
+}
+
+        }
+	}
+}
+,"JITData" : {
+	"title": "JITData",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"SupplyArea" : {
+	"title": "SupplyArea",
+    "type": "string"
+},"SupplyAreaDescription" : {
+	"title": "SupplyAreaDescription",
+    "type": "string"
+},"AssemblyLocation" : {
+	"title": "AssemblyLocation",
+    "type": "string"
+},"ExternalJITCallNumber" : {
+	"title": "ExternalJITCallNumber",
+    "type": "string"
+},"JITCallType" : {
+	"title": "JITCallType",
+    "type": "string"
+},"ComponentGroupNumber" : {
+	"title": "ComponentGroupNumber",
+    "type": "string"
+},"JITCallSlotData" : {
+	"title": "JITCallSlotData",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "SlotID" : {
+	"title": "SlotID",
+    "type": "string"
+},"HandlingUnitID" : {
+	"title": "HandlingUnitID",
+    "type": "string"
+},"ExternalJITCallNumber" : {
+	"title": "ExternalJITCallNumber",
+    "type": "string"
+},"JITCallType" : {
+	"title": "JITCallType",
+    "type": "string"
+},"SequenceNumber" : {
+	"title": "SequenceNumber",
+    "type": "string"
+},"ReorderIndicator" : {
+	"title": "ReorderIndicator",
+    "type": "boolean"
+},"ComponentGroupNumber" : {
+	"title": "ComponentGroupNumber",
+    "type": "string"
+},"CustomerComponentGroupMaterial" : {
+	"title": "CustomerComponentGroupMaterial",
+    "type": "string"
+},"CustomerNumber" : {
+	"title": "CustomerNumber",
+    "type": "string"
+},"BuyerID" : {
+	"title": "BuyerID",
+    "type": "string"
+},"SupplierID" : {
+	"title": "SupplierID",
+    "type": "string"
+}
+        }
+	}
+}
+,"JITCallItemData" : {
+	"title": "JITCallItemData",
+	"type": "array",
+	"additionalItems": true,
+	"Items": {
+		"type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "ExternalJITCallNumber" : {
+	"title": "ExternalJITCallNumber",
+    "type": "string"
+},"ItemNumber" : {
+	"title": "ItemNumber",
+    "type": "string"
+},"Quantity" : {
+	"title": "Quantity",
+    "type": "string"
+}
+        }
+	}
+}
+
+	}
+}
+
+        }
+	}
+}
+,"ShippingPointAddress" : {
+	"title": "ShippingPointAddress",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"AddressName" : {
+	"title": "AddressName",
+    "type": "string"
+},"AddressAdditionalName" : {
+	"title": "AddressAdditionalName",
+    "type": "string"
+},"StreetName" : {
+	"title": "StreetName",
+    "type": "string"
+},"HouseNumber" : {
+	"title": "HouseNumber",
+    "type": "string"
+},"PostalCode" : {
+	"title": "PostalCode",
+    "type": "string"
+},"CityName" : {
+	"title": "CityName",
+    "type": "string"
+},"Country" : {
+	"title": "Country",
+    "type": "string"
+},"District" : {
+	"title": "District",
+    "type": "string"
+},"Region" : {
+	"title": "Region",
+    "type": "string"
+},"PhoneNumber" : {
+	"title": "PhoneNumber",
+    "type": "string"
+},"FaxNumber" : {
+	"title": "FaxNumber",
+    "type": "string"
+},"CorrespondenceLanguage" : {
+	"title": "CorrespondenceLanguage",
+    "type": "string"
+}
+	}
+}
+
+	}
+}
+
+        }
+    }
+}

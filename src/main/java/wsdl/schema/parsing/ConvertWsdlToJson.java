@@ -21,15 +21,14 @@ import org.apache.commons.text.StringSubstitutor;
 
 public class ConvertWsdlToJson {
 	
-	public static final String PATH = "/Users/I327667/git/wsdl-to-json/wsdl-to-json/src/main/resources/";
-	public static final String TEMPLATE_COMPLEXTYPE_OBJECT = "attributeComplexTypeObject";
-	public static final String TEMPLATE_COMPLEXTYPE_ARRAY = "attributeComplexTypeArray";
-	public static final String TEMPLATE_SIMPLETYPE = "attributeSimpleType";
-	public static final String TEMPLATE_SIMPLETYPE_ARRAY = "attributeSimpleTypeArray";
-	public static final String TEMPLATE_SIMPLETYPE_DATETIME = "attributeSimpleTypeDateTime";
-	public static final String TEMPLATE_MESSAGE = "message";
-	public static final String OUTPUT_SCHEMA = "outputSchema";
-	public static final String INPUT_FILE = "salesOrderErrorLog";
+	public static final String PATH = "/Users/I327667/git/wsdl-to-json/src/main/resources/";
+	public static final String TEMPLATE_COMPLEXTYPE_OBJECT = "_attributeComplexTypeObject";
+	public static final String TEMPLATE_COMPLEXTYPE_ARRAY = "_attributeComplexTypeArray";
+	public static final String TEMPLATE_SIMPLETYPE = "_attributeSimpleType";
+	public static final String TEMPLATE_SIMPLETYPE_ARRAY = "_attributeSimpleTypeArray";
+	public static final String TEMPLATE_SIMPLETYPE_DATETIME = "_attributeSimpleTypeDateTime";
+	public static final String TEMPLATE_MESSAGE = "_message";
+	public static final String INPUT_FILE = "deliveryRequest";
 	public static final String VERIFY = "-verify";
 	public static final String EXT_JSON = ".json";
 	public static final String EXT_WSDL = ".wsdl";
@@ -37,26 +36,21 @@ public class ConvertWsdlToJson {
 	
 	public static void main(String[] args) {
 		
+		System.out.println("");
 		try {
-			
 			DocumentBuilder builder = createDocumentBuilder();
-
 	        Document document = builder.parse(new File(PATH + INPUT_FILE + EXT_WSDL));
 	        
 	        verifyDocument(document, System.out);  /* verify wsdl document*/
-	        
-	        System.out.println("-------start convertion-------");
+	        System.out.println("-------start convertion-------\n");
 	        
 	        convertToJson(document);
-	        
-	        System.out.println("-----------finished-----------");
+	        System.out.println("\n-----------finished-----------");
 		}
 		
 		catch (Exception e) {
 			e.printStackTrace();
 		}
-		
-		System.out.println("\nHealth is ok!");
 
 	}
 	
@@ -66,7 +60,7 @@ public class ConvertWsdlToJson {
 		/* Proceed if setup successful */
 		if(initialSetup(document)) {
 			
-			System.out.println("start convertion\n\t***");
+			System.out.println("\n>> start convertion\n>>");
 			
 			NodeList rootNodeList = document.getDocumentElement().getChildNodes();
 			
@@ -85,11 +79,12 @@ public class ConvertWsdlToJson {
 			String jsonSchema = getJsonSchemaForRoot(rootNode,targetType);
 			
 			/* Print the json in outputSchema.json */
-			try (PrintWriter out = new PrintWriter(PATH + OUTPUT_SCHEMA + EXT_JSON)) {
+			try (PrintWriter out = new PrintWriter(PATH + INPUT_FILE + EXT_JSON)) {
 			    out.println(jsonSchema);
 			}
 			
-			System.out.println("convertion successfull\n\t***");
+			System.out.println(">> convertion successfull\n>>");
+			System.out.println(">> output file : " + PATH + INPUT_FILE + EXT_JSON);
 			
 			return jsonSchema;
 			
@@ -151,7 +146,7 @@ public class ConvertWsdlToJson {
 					
 					result = result.isBlank() ? getJsonSchemaForComplexType(tmpNode, jsonSchemaChildNode)
 								: result + "," + getJsonSchemaForComplexType(tmpNode, jsonSchemaChildNode);
-					System.out.print("%::");
+					//System.out.print("%::");
 				}
 				
 			} else if(childNode.getChildNodes().item(i).hasChildNodes()) {
